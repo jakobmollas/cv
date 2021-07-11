@@ -14,7 +14,7 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #9099a0;
-  padding-bottom: 50px;
+  padding-bottom: 2em;
 }
 a {
   text-decoration: none;
@@ -24,12 +24,12 @@ a:hover {
   text-decoration: underline;
 }
 .container {
-  max-width: 1000px;
+  max-width: 65em;
   background: #3d3e42;
   margin: 0px auto 0px;
   border-radius: 6px;
-  padding: 40px;
-  margin-top: 50px;
+  padding: 1.5em;
+  margin-top: 2em;
 }
 .left, .right {
   vertical-align: top;
@@ -45,9 +45,6 @@ a:hover {
   margin-bottom: 30px;
 }
 .header .left {
-  margin-bottom: 30px;
-}
-.header {
   margin-bottom: 30px;
 }
 .header .avatar {
@@ -129,7 +126,4 @@ a:hover {
   color: white;
   text-transform: uppercase;
   margin-right: 10px;
-}
-.details .skills__item {
-  margin-bottom: 10px;
 }
