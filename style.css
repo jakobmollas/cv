@@ -1,130 +1,137 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    height: 100%;
-  }
-  body {
-    min-height: 100%;
-    background: #252323;
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    line-height: 22px;
-    font-weight: 400;
-    color: #9099a0;
-    padding-bottom: 50px;
-  }
-  a {
-    text-decoration: none;
-    color: #66cc99;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  .container {
-    max-width: 1000px;
-    background: #3d3e42;
-    margin: 0px auto 0px;
-    border-radius: 6px;
-    padding: 40px;
-    margin-top: 50px;
-  }
-  .header {
-    margin-bottom: 30px;
-  }
-  .header .full-name {
-    font-size: 40px;
-    text-transform: uppercase;
-    color: #66cc99;
-    margin-bottom: 5px;
-  }
-  .full-name .first-name {
-    font-weight: 700;
-  }
-  .full-name .last-name {
-    font-weight: 350;
-  }
-  .header .contact-info {
-    font-weight: 300;
-    margin-bottom: 20px;
-  }
-  .contact-info .value {
-    color: white;
-  }
-  .header .separator {
-    height: 10px;
-    display: inline-block;
-    border-left: 2px solid #999;
-    margin: 0px 10px;
-  }
-  .about .title {
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    display: inline-block;
-  }
-  .about .summary {
-    margin-bottom: 10px;
-  }
-  .details {
-  }
-  .details .section {
-    margin-bottom: 40px;
-  }
-  .details .section:last-of-type {
-    margin-bottom: 0px;
-  }
-  .section .title {
-    letter-spacing: 2px;
-    color: #66cc99;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-  .section .item {
-    margin-bottom: 25px;
-  }
-  .section .item:last-of-type {
-    margin-bottom: 0;
-  }
-  .section .left,
-  .section .right {
-    vertical-align: top;
-    display: inline-block;
-  }
-  .section .left {
-    width: 25%;
-  }
-  .section .right {
-    tex-align: right;
-    width: 74%;
-  }
-  .section .name {
-    color: white;
-    font-weight: bold;
-  }
-  .section .type {
-    font-weight: 300;
-  }
-  .section .role {
-    color: white;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  .section .description {
-    margin-bottom: 10px;
-  }
-  .section .description:last-of-type {
-    margin-bottom: 0px;
-  }
-  .description .header {
-    color: white;
-    text-transform: uppercase;
-    margin-right: 10px;
-  }
-  .details .skills__item {
-    margin-bottom: 10px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background: #252323;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #9099a0;
+  padding-bottom: 50px;
+}
+a {
+  text-decoration: none;
+  color: #66cc99;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  max-width: 1000px;
+  background: #3d3e42;
+  margin: 0px auto 0px;
+  border-radius: 6px;
+  padding: 40px;
+  margin-top: 50px;
+}
+.left, .right {
+  vertical-align: top;
+  display: inline-block;
+}
+.left {
+  width: 25%;
+}
+.right {
+  tex-align: right;
+  width: 74%;
+}
+.header {
+  margin-bottom: 30px;
+}
+.header .left {
+  margin-bottom: 30px;
+}
+.header {
+  margin-bottom: 30px;
+}
+.header .avatar {
+  max-width: 100%;
+  height: auto;
+  padding-right: 10px;
+}
+.header .full-name {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #66cc99;
+  margin-bottom: 5px;
+}
+.full-name .first-name {
+  font-weight: 700;
+}
+.full-name .last-name {
+  font-weight: 350;
+}
+.header .contact-info {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.contact-info .value {
+  color: white;
+}
+.header .separator {
+  height: 10px;
+  display: inline-block;
+  border-left: 2px solid #999;
+  margin: 0px 10px;
+}
+.about .title {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+}
+.about .summary {
+  margin-bottom: 10px;
+}
+.details .section {
+  margin-bottom: 40px;
+}
+.details .section:last-of-type {
+  margin-bottom: 0px;
+}
+.section .title {
+  letter-spacing: 2px;
+  color: #66cc99;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.section .item {
+  margin-bottom: 25px;
+}
+.section .item:last-of-type {
+  margin-bottom: 0;
+}
+.section .name {
+  color: white;
+  font-weight: bold;
+}
+.section .type {
+  font-weight: 300;
+}
+.section .role {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.section .description {
+  margin-bottom: 10px;
+}
+.section .description:last-of-type {
+  margin-bottom: 0px;
+}
+.description .header {
+  color: white;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.details .skills__item {
+  margin-bottom: 10px;
+}
