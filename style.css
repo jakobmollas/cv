@@ -57,6 +57,7 @@ a:hover {
 }
 .header .full-name {
   font-size: 40px;
+  line-height: 40px;
   text-transform: uppercase;
   color: #66cc99;
   margin-bottom: 5px;
