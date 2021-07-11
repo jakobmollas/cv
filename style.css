@@ -44,9 +44,6 @@ a:hover {
 .header {
   margin-bottom: 30px;
 }
-.header .left {
-  margin-bottom: 30px;
-}
 .header .avatar {
   max-width: 100%;
   height: auto;
@@ -112,9 +109,14 @@ a:hover {
   font-weight: 300;
 }
 .section .role {
+  margin-bottom: 10px;
+}
+.role .role-title {
   color: white;
   font-weight: bold;
-  margin-bottom: 10px;
+}
+.role .role-details {
+  font-weight: normal;
 }
 .section .description {
   margin-bottom: 10px;
