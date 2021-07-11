@@ -54,6 +54,7 @@ a:hover {
   max-width: 100%;
   height: auto;
   padding-right: 10px;
+  border-radius: 50%;
 }
 .header .full-name {
   font-size: 40px;
