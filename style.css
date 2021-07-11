@@ -39,7 +39,6 @@ a:hover {
   width: 25%;
 }
 .right {
-  tex-align: right;
   width: 74%;
 }
 .header {
@@ -105,9 +104,6 @@ a:hover {
 }
 .section .item {
   margin-bottom: 25px;
-}
-.section .item:last-of-type {
-  margin-bottom: 0;
 }
 .section .name {
   color: white;
