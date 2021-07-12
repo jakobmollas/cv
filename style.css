@@ -141,7 +141,7 @@ a:hover {
 }
 
 @media all and (max-width: 600px) {
-  /* Small screens, all in one column */
+  /* Small screens, all in one column, center some stuff */
   .row {
     flex-direction: column;
   }
