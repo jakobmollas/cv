@@ -16,6 +16,7 @@ body {
   padding-bottom: 15px;
   font-size: 1rem;
 }
+
 a {
   text-decoration: none;
   color: #66cc99;
@@ -23,13 +24,14 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 .container {
   max-width: 900px;
   background: #3d3e42;
   margin: 0px auto 0px;
   border-radius: 6px;
   padding: 15px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 /* Flexbox setup, responsive 2 column main layout */
@@ -39,6 +41,9 @@ a:hover {
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: 5px;
+}
+.row:last-of-type {
+  margin-bottom: 0px;
 }
 .column {
   display: flex;
@@ -77,16 +82,14 @@ a:hover {
   color: #66cc99;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 20px;
 }
 
 /* main-header */
 .main-header .avatar {
   align-self: center;
   max-width: 100%;
-  padding-right: 10px;
+  padding-right: 15px;
   border-radius: 50%;
-  
 }
 .main-header .full-name {
   font-size: 2.5rem;
@@ -114,13 +117,16 @@ a:hover {
 .main-header .main-title {
   font-size: 1.3rem;
 }
-.main-header .paragraph {
+.main-header .paragraph:not(:last-of-type) {
   margin-bottom: 10px;
 }
 
 /* experience */
 .experience-section {
-  padding: 5px 0px;
+  padding-top: 5px;
+}
+.experience-section:not(:last-of-type) {
+  padding-bottom: 5px;
   border-bottom: 1px solid #252323;
 }
 .experience-company {
@@ -140,11 +146,8 @@ a:hover {
 .experience-role-details {
   font-weight: normal;
 }
-.experience-item {
+.experience-item:not(:last-of-type) {
   margin-bottom: 10px;
-}
-.experience-item:last-of-type {
-  margin-bottom: 0px;
 }
 .experience-item .header {
   letter-spacing: 0.1rem;
