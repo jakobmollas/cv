@@ -31,101 +31,118 @@ a:hover {
   padding: 15px;
   margin-top: 30px;
 }
-.left, .right {
-  vertical-align: top;
-  display: inline-block;
+
+/* Flexbox setup, responsive 2 column main layout */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 .left {
   width: 25%;
 }
 .right {
-  width: 74%;
+  width: 75%;
 }
-.header {
-  margin-bottom: 30px;
+@media all and (max-width: 600px) {
+  /* Small screens, all in one column */
+  .row {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+  }
+  
+  .right {
+    width: 100%;
+  }
 }
-.header .avatar {
+
+/* common */
+.hightlight {
+  color: white;
+  font-weight: bold;
+}
+
+/* main-header */
+.main-header .avatar {
   max-width: 100%;
   height: auto;
   padding-right: 10px;
   border-radius: 50%;
+  height: 200px;
+  width: 200px;
 }
-.header .full-name {
+.main-header .full-name {
   font-size: 2.5rem;
   line-height: 40px;
   text-transform: uppercase;
   color: #66cc99;
   margin-bottom: 5px;
 }
-.full-name .first-name {
+.main-header .first-name {
   font-weight: 700;
 }
-.full-name .last-name {
+.main-header .last-name {
   font-weight: 350;
 }
-.header .contact-info {
+.main-header .contact-info {
   font-weight: 300;
   margin-bottom: 20px;
 }
-.contact-info .value {
-  color: white;
-}
-.header .separator {
+.main-header .separator {
   height: 10px;
   display: inline-block;
-  border-left: 2px solid #999;
+  border-left: 2px solid;
   margin: 0px 10px;
 }
-.about .title {
-  color: white;
-  font-weight: bold;
+.main-header .main-title {
   font-size: 1.3rem;
-  display: inline-block;
 }
-.about .summary {
+.main-header .paragraph {
   margin-bottom: 10px;
 }
-.details .section {
-  margin-bottom: 40px;
-}
-.details .section:last-of-type {
-  margin-bottom: 0px;
-}
-.section .title {
-  letter-spacing: 2px;
+
+.section-title {
+  letter-spacing: 0.2rem;
   color: #66cc99;
   font-weight: bold;
-  margin-bottom: 10px;
   text-transform: uppercase;
 }
-.section .item {
-  margin-bottom: 25px;
-}
-.section .name {
+
+/* experience */
+.experience-company {
   color: white;
   font-weight: bold;
 }
-.section .type {
+.experience-role-type {
   font-weight: 300;
 }
-.section .role {
+.experience-role {
   margin-bottom: 10px;
 }
-.role .role-title {
+.experience-role-title {
   color: white;
   font-weight: bold;
 }
-.role .role-details {
+.experience-role-details {
   font-weight: normal;
 }
-.section .description {
+.experience-item {
   margin-bottom: 10px;
 }
-.section .description:last-of-type {
-  margin-bottom: 0px;
-}
-.description .header {
+.experience-item .header {
+  letter-spacing: 0.1rem;
+  font-weight: bold;
   color: white;
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 6px;
 }
