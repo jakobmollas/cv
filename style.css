@@ -70,18 +70,6 @@ a:hover {
   text-transform: uppercase;
 }
 
-.company-logotype {
-  margin-top: 10px;
-  margin-right: 10px;
-  max-width: 100%;
-  height: auto;
-}
-
-.company-details {
-  display: flex;
-  flex-direction: column;
-}
-
 /* main-header */
 .main-header .avatar {
   align-self: center;
@@ -124,6 +112,16 @@ a:hover {
 .experience-section:not(:last-of-type) {
   padding-bottom: 5px;
   border-bottom: 1px solid #252323;
+}
+.company-logotype {
+  margin-top: 10px;
+  margin-right: 10px;
+  max-width: 100%;
+  height: auto;
+}
+.company-details {
+  display: flex;
+  flex-direction: column;
 }
 .experience-company {
   color: white;
@@ -169,7 +167,6 @@ a:hover {
 
   .company-logotype {
     margin-top: 0px;
-    margin-right: 10px;
   }
 
   .company-details {
