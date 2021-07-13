@@ -55,6 +55,7 @@ p:not(:last-child) {
 }
 .left {
   width: 25%;
+  padding-right: 10px;
 }
 .right {
   width: 75%;
@@ -79,7 +80,6 @@ p:not(:last-child) {
   align-self: center;
   max-width: 100%;
   height: auto;
-  padding-right: 15px;
   margin-bottom: 10px;
   border-radius: 50%;
 }
@@ -155,6 +155,10 @@ p:not(:last-child) {
   /* Small screens, all in one column, center some stuff */
   .row {
     flex-direction: column;
+  }
+
+  .column {
+    padding-right: 0px;
   }
 
   .left, .right {
