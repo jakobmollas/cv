@@ -90,10 +90,10 @@ p:not(:last-child) {
   font-size: 2.5rem;
 }
 .main-header .first-name {
-  font-weight: 700;
+  font-weight: bold;
 }
 .main-header .last-name {
-  font-weight: 350;
+  font-weight: 300;
 }
 .main-header .contact-info {
   font-weight: 300;
