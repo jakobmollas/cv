@@ -1,9 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  
+  font-style: normal;
+  font-size: 100%;
+  font-weight: normal;
 }
 html {
   height: 100%;
@@ -12,9 +15,8 @@ body {
   min-height: 100%;
   background: #252323;
   line-height: 22px;
-  color: #a0a9b0;
+  color: #a6afb6;
   padding-bottom: 15px;
-  font-size: 1rem;
 }
 
 a {
@@ -23,6 +25,10 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+p:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .container {
@@ -40,15 +46,10 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 5px;
-}
-.row:last-of-type {
-  margin-bottom: 0px;
 }
 .column {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
 }
 .left {
   width: 25%;
@@ -68,24 +69,22 @@ a:hover {
   color: #66cc99;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-/* main-header */
+/* main header */
 .main-header .avatar {
   align-self: center;
   max-width: 100%;
   padding-right: 15px;
+  margin-bottom: 10px;
   border-radius: 50%;
 }
-.name-and-links {
-  text-align: left;
-}
 .main-header .full-name {
-  font-size: 2.5rem;
   line-height: 40px;
   text-transform: uppercase;
   color: #66cc99;
-  margin-bottom: 5px;
+  font-size: 2.5rem;
 }
 .main-header .first-name {
   font-weight: 700;
@@ -97,25 +96,23 @@ a:hover {
   font-weight: 300;
 }
 .main-header .main-title {
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 5px;
   font-size: 1.3rem;
 }
-.main-header .paragraph:not(:last-of-type) {
-  margin-bottom: 10px;
-}
 
 /* experience */
-.experience-section {
-  padding-top: 5px;
+.experience-section:not(:first-of-type) {
+  padding-top: 15px;
 }
 .experience-section:not(:last-of-type) {
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #252323;
 }
 .company-logotype {
   margin-top: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
   max-width: 100%;
   height: auto;
 }
@@ -140,10 +137,10 @@ a:hover {
 .experience-role-details {
   font-weight: normal;
 }
-.experience-item:not(:last-of-type) {
-  margin-bottom: 10px;
+.experience-section .header:first-of-type {
+  margin-top: 10px; 
 }
-.experience-item .header {
+.experience-section .header {
   letter-spacing: 0.1rem;
   font-weight: bold;
   color: white;
