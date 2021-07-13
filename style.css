@@ -8,9 +8,11 @@
   font-size: 100%;
   font-weight: normal;
 }
+
 html {
   height: 100%;
 }
+
 body {
   min-height: 100%;
   background: #252323;
@@ -76,6 +78,7 @@ p:not(:last-child) {
 .main-header .avatar {
   align-self: center;
   max-width: 100%;
+  height: auto;
   padding-right: 15px;
   margin-bottom: 10px;
   border-radius: 50%;
@@ -166,6 +169,7 @@ p:not(:last-child) {
     margin-top: 0px;
   }
 
+  /* place company logo  left of company details */
   .company-details {
     display: flex;
     flex-direction: row;
