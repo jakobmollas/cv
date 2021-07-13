@@ -73,16 +73,13 @@ a:hover {
 .company-logotype {
   margin-top: 10px;
   margin-right: 10px;
-  max-height: 75px;
-  max-width: 75px;
+  max-width: 100%;
+  height: auto;
 }
 
 .company-details {
   display: flex;
   flex-direction: column;
-  /* flex-direction: column-reverse; */
-  /* align-items: center; */
-  /* justify-content: flex-start; */
 }
 
 /* main-header */
