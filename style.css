@@ -12,7 +12,7 @@ body {
   min-height: 100%;
   background: #252323;
   line-height: 22px;
-  color: #9099a0;
+  color: #a0a9b0;
   padding-bottom: 15px;
   font-size: 1rem;
 }
@@ -98,6 +98,7 @@ a:hover {
 }
 .main-header .main-title {
   margin-top: 25px;
+  margin-bottom: 5px;
   font-size: 1.3rem;
 }
 .main-header .paragraph:not(:last-of-type) {
@@ -146,11 +147,7 @@ a:hover {
     flex-direction: column;
   }
 
-  .left {
-    width: 100%;
-  }
-  
-  .right {
+  .left, .right {
     width: 100%;
   }
 
