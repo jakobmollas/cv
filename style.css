@@ -70,6 +70,21 @@ a:hover {
   text-transform: uppercase;
 }
 
+.company-logotype {
+  margin-top: 10px;
+  margin-right: 10px;
+  max-height: 75px;
+  max-width: 75px;
+}
+
+.company-details {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column-reverse; */
+  /* align-items: center; */
+  /* justify-content: flex-start; */
+}
+
 /* main-header */
 .main-header .avatar {
   align-self: center;
@@ -153,5 +168,17 @@ a:hover {
 
   .name-and-links {
     text-align: center;
+  }
+
+  .company-logotype {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+
+  .company-details {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 }
