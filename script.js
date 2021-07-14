@@ -1,6 +1,7 @@
 const burgerButton = document.getElementsByClassName('burger-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
+/* open/close burger menu when clicked directly */
 burgerButton.addEventListener('click', () => { navbarLinks.classList.toggle('open') })
 
 /* close burger menu when links are clicked */
@@ -8,8 +9,3 @@ const allNavbarLinks = document.getElementsByClassName('navbar-links')[0].queryS
 allNavbarLinks.forEach(link => {
     link.addEventListener('click', () => { navbarLinks.classList.remove('open') })
 });
-
-function scrollToTopOfPage() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
