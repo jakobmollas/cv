@@ -18,6 +18,7 @@ body {
   background: #252323;
   line-height: 22px;
   color: #a6afb6;
+  padding-top: 3.5rem;
   padding-bottom: 15px;
 }
 
@@ -38,22 +39,11 @@ p:not(:last-child) {
   background: #3d3e42;
   margin: 0px auto 0px;
   border-radius: 6px;
-  padding: 15px;
-  margin-top: 15px;
+  padding: 1rem;
 }
 
-/* common */
-.highlight {
-  color: white;
-  font-weight: bold;
-}
-
-.section-title {
-  letter-spacing: 0.2rem;
-  color: #66cc99;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+.container:not(:last-of-type) {
+  margin-bottom: 15px;
 }
 
 /* Flexbox setup, responsive 2 column main layout */
@@ -73,6 +63,82 @@ p:not(:last-child) {
 }
 .right {
   width: 75%;
+}
+
+/* common */
+.highlight {
+  color: white;
+  font-weight: bold;
+}
+
+.section-title {
+  letter-spacing: 0.2rem;
+  color: #66cc99;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  background-color: #252323;
+  color: white;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color:  #66cc99;
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.burger-button {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 31px;
+  background-color: #252323;
+  padding: 5px;
+}
+
+.burger-button .burger-line {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
 }
 
 /* main header */
@@ -153,27 +219,54 @@ p:not(:last-child) {
 
 @media all and (max-width: 600px) {
   /* Small screens, all in one column, center some stuff */
+  body {
+    padding-top: 0;
+  }
   .row {
     flex-direction: column;
   }
-
   .column {
     padding-right: 0px;
   }
-
   .left, .right {
     width: 100%;
   }
-
   .name-and-links {
     text-align: center;
   }
-
   .company-logotype {
     margin-top: 0px;
   }
 
-  /* place company logo  left of company details */
+  /* navbar stuff */
+  .navbar {
+    right: 0;
+    flex-direction: column;
+  }
+  .burger-button {
+    display: flex;
+  }
+  .navbar-links {
+    /* controlled via js */
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+  .navbar-links.open {
+    /* used by js code to show/hide burger menu */
+    display: flex;
+  }
+
+  /* place company logo LEFT of company details */
   .company-details {
     display: flex;
     flex-direction: row;

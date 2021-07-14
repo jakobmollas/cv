@@ -21,54 +21,75 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet"
             type="text/css" />
     </noscript>
-    
+
     <link rel="stylesheet" media="all" href="style.css">
 </head>
 
 <body>
-    <section class="container">
-        <div class="row main-header">
-            <div class="column left">
-                <img src="images/avatar.jpg" alt="Photo of Jakob Möllås" class="avatar" width="200" height="200" />
+    <header>
+        <nav class="navbar">
+            <a href="#" class="burger-button">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a onclick="scrollToTopOfPage()" href="#">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                </ul>
             </div>
-
-            <div class="column right">
-                <div class="name-and-links">
-                    <div class="full-name">
-                        <span class="first-name">Jakob</span>
-                        <span class="last-name">Möllås</span>
-                    </div>
-
-                    <address class="contact-info">
-                        Email: <a href="mailto:jakob.mollas@gmail.com">jakob.mollas@gmail.com</a>
-                    </address>
-
-                    <address class="contact-info">
-                        Linkedin: <a href="https://www.linkedin.com/in/jakobmollas/">linkedin.com/in/jakobmollas</a>
-                    </address>
-                </div>
-
-                <article class="about">
-                    <h1 class="highlight main-title">Software developer/architect</h1>
-                    <p>Jakob is a curious, pragmatic and result oriented developer. He prefers to
-                        work
-                        in small, dedicated teams having a great deal of shared responsibility. He strives for solutions
-                        that are clear, simple and easy to understand and maintain. Driven by principles like Clean
-                        Code/Architecture, DRY, KISS and No broken windows.</p>
-                    <p>Jakob is communicative and thrives both deep down in technical details and in
-                        strategic discussions with product owners and various stakeholders. Being able to look beyond
-                        the next delivery and constantly striving for stable solutions that last over time is also an
-                        important quality.</p>
-                    <p>The experience from many different industries and roles means that Jakob can
-                        take on roles and responsibilities based on the needs of the current team, organization and
-                        product.</p>
-                </article>
-            </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
     <main>
-        <section class="container">
+        <section class="container" id="about">
+            <div class="row main-header">
+                <div class="column left">
+                    <img src="images/avatar.jpg" alt="Photo of Jakob Möllås" class="avatar" width="200" height="200" />
+                </div>
+
+                <div class="column right">
+                    <div class="name-and-links">
+                        <div class="full-name">
+                            <span class="first-name">Jakob</span>
+                            <span class="last-name">Möllås</span>
+                        </div>
+
+                        <address class="contact-info">
+                            Email: <a href="mailto:jakob.mollas@gmail.com">jakob.mollas@gmail.com</a>
+                        </address>
+
+                        <address class="contact-info">
+                            Linkedin: <a href="https://www.linkedin.com/in/jakobmollas/">linkedin.com/in/jakobmollas</a>
+                        </address>
+                    </div>
+
+                    <article class="about">
+                        <h1 class="highlight main-title">Software developer/architect</h1>
+                        <p>Jakob is a curious, pragmatic and result oriented developer. He prefers to
+                            work
+                            in small, dedicated teams having a great deal of shared responsibility. He strives for
+                            solutions
+                            that are clear, simple and easy to understand and maintain. Driven by principles like Clean
+                            Code/Architecture, DRY, KISS and No broken windows.</p>
+                        <p>Jakob is communicative and thrives both deep down in technical details and in
+                            strategic discussions with product owners and various stakeholders. Being able to look
+                            beyond
+                            the next delivery and constantly striving for stable solutions that last over time is also
+                            an
+                            important quality.</p>
+                        <p>The experience from many different industries and roles means that Jakob can
+                            take on roles and responsibilities based on the needs of the current team, organization and
+                            product.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="experience">
             <h2 class="row section-title">Experience</h2>
             <article class="row experience-section">
                 <div class="column left company-details">
@@ -382,14 +403,14 @@
             </article>
         </section>
 
-        <section class="container">
+        <section class="container" id="education">
             <h2 class="row column section-title">Education</h2>
             <p>Information Technology<br>
                 Jönköping University, Sweden<br>
                 1996-1999</p>
         </section>
 
-        <section class="container">
+        <section class="container" id="technology">
             <h2 class="section-title">Technology (mostly used)</h2>
 
             <h3 class="highlight">Frameworks</h3>
@@ -411,6 +432,8 @@
             <p>GitLab, Azure DevOps/TFS, Bamboo, Jenkins, JIRA, Confluence, ADoc, MarkDown, PlantUml, diagrams.net</p>
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
