@@ -30,6 +30,14 @@ a:hover {
   text-decoration: underline;
 }
 
+.anchor {
+  /* used to avoid internal page links to be partially hidden by top nav menu */
+  display: block;
+  position: relative;
+  top: -3.4rem;
+  visibility: hidden;
+}
+
 p:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -232,6 +240,11 @@ p:not(:last-child) {
   }
   .company-logotype {
     margin-top: 0px;
+  }
+
+  .anchor {
+    /* no need to offset anchors in mobile mode since no top nav menu exist here */
+    top: 0rem;
   }
 
   /* navbar stuff */
