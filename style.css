@@ -42,6 +42,20 @@ p:not(:last-child) {
   margin-top: 15px;
 }
 
+/* common */
+.highlight {
+  color: white;
+  font-weight: bold;
+}
+
+.section-title {
+  letter-spacing: 0.2rem;
+  color: #66cc99;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
 /* Flexbox setup, responsive 2 column main layout */
 .row {
   display: flex;
@@ -59,20 +73,6 @@ p:not(:last-child) {
 }
 .right {
   width: 75%;
-}
-
-/* common */
-.hightlight {
-  color: white;
-  font-weight: bold;
-}
-
-.section-title {
-  letter-spacing: 0.2rem;
-  color: #66cc99;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 /* main header */
