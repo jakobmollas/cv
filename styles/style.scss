@@ -1,0 +1,297 @@
+$accent-color: #66cc99;
+$highlight-color: white;
+$main-text-color: #a6afb6;
+$light-background: #3d3e42;
+$dark-background: #252323;
+
+$top-menu-height: 3.4rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: $dark-background;
+  line-height: 22px;
+  color: $main-text-color;
+  padding-top: $top-menu-height;
+  padding-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: $accent-color;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.anchor {
+  /* used to avoid internal page links to be partially hidden by top nav menu */
+  display: block;
+  position: relative;
+  top: -top-menu-height;
+  visibility: hidden;
+}
+
+p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 900px;
+  background: $light-background;
+  margin: 0px auto 0px;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.container:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+/* Main flexbox setup, responsive 2 column main layout */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.left {
+  width: 25%;
+  padding-right: 10px;
+}
+.right {
+  width: 75%;
+}
+
+/* common */
+@mixin highlight-text {
+  color: $highlight-color;
+  font-weight: bold;
+}
+
+@mixin section-title-text {
+  letter-spacing: 0.2rem;
+  color: $accent-color;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-header {
+  @include section-title-text;
+
+  margin-bottom: 10px;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  /* keep it floating at the top */
+  position: fixed;
+  top: 0;
+  /* this will center the navbar horizontally */
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  background-color: $dark-background;
+}
+
+.navbar-list ul {
+  display: flex;
+}
+
+.navbar-list li {
+  list-style: none;
+}
+
+.navbar-list li a {
+  @include section-title-text;
+
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.navbar-list li:hover {
+  background-color: $light-background;
+}
+
+.burger-button {
+  /* using css to draw button instead of svg, icon etc. */
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 31px;
+  background-color: $dark-background;
+  padding: 5px;
+  display: none;
+}
+
+.burger-button .burger-line {
+  height: 3px;
+  width: 100%;
+  background-color: $highlight-color;
+  border-radius: 5px;
+}
+
+/* about section */
+.about .avatar {
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+.about .full-name {
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $accent-color;
+  font-size: 2.5rem;
+}
+.about .first-name {
+  font-weight: bold;
+}
+.about .last-name {
+  font-weight: 300;
+}
+.about .contact-info {
+  font-weight: 300;
+}
+.about .main-title {
+  @include highlight-text;
+
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+/* experience */
+.experience-section:not(:first-of-type) {
+  padding-top: 15px;
+}
+.experience-section:not(:last-of-type) {
+  padding-bottom: 15px;
+  border-bottom: 1px solid $dark-background;
+}
+.company-logotype {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+}
+.company-details {
+  display: flex;
+  flex-direction: column;
+}
+.experience-company, .experience-role-title {
+  @include highlight-text;
+}
+.experience-role-type {
+  font-weight: 300;
+}
+.experience-role {
+  margin-bottom: 10px;
+}
+
+.experience-role-details {
+  font-weight: normal;
+}
+.experience-section .header:first-of-type {
+  margin-top: 10px; 
+}
+.experience-section .header {
+  @include highlight-text;
+
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+/* technology */
+.technology-area {
+  @include highlight-text;
+}
+
+@media all and (max-width: 600px) {
+  /* Small screens, all in one column, center some stuff */
+  body {
+    padding-top: 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .column {
+    padding-right: 0px;
+  }
+  .left, .right {
+    width: 100%;
+  }
+  .name-and-links {
+    text-align: center;
+  }
+  .company-logotype {
+    margin-top: 0px;
+  }
+
+  .anchor {
+    /* no need to offset anchors in mobile mode since no top nav menu exist here */
+    top: 0rem;
+  }
+
+  /* navbar stuff */
+  .navbar {
+    right: 0;
+    flex-direction: column;
+  }
+  .burger-button {
+    display: flex;
+  }
+  .navbar-list {
+    /* controlled via js */
+    display: none;
+    width: 100%;
+  }
+  .navbar-list ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-list ul li {
+    text-align: center;
+  }
+  .navbar-list ul li a {
+    padding: .5rem 1rem;
+  }
+  .navbar-list.open {
+    /* used by js code to show/hide burger menu */
+    display: flex;
+  }
+
+  /* place company logo LEFT of company details */
+  .company-details {
+    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}

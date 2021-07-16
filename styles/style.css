@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-size: 100%;
@@ -26,6 +27,7 @@ a {
   text-decoration: none;
   color: #66cc99;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -34,7 +36,7 @@ a:hover {
   /* used to avoid internal page links to be partially hidden by top nav menu */
   display: block;
   position: relative;
-  top: -3.4rem;
+  top: -top-menu-height;
   visibility: hidden;
 }
 
@@ -56,37 +58,43 @@ p:not(:last-child) {
 
 /* Main flexbox setup, responsive 2 column main layout */
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
+
 .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .left {
   width: 25%;
   padding-right: 10px;
 }
+
 .right {
   width: 75%;
 }
 
 /* common */
-.highlight {
-  color: white;
-  font-weight: bold;
-}
-
-.section-title, .navbar-list li a {
+.section-header {
   letter-spacing: 0.2rem;
   color: #66cc99;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.section-title {
   margin-bottom: 10px;
 }
 
@@ -98,15 +106,20 @@ p:not(:last-child) {
   top: 0;
   /* this will center the navbar horizontally */
   left: 50%;
-  transform: translateX(-50%);
-
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #252323;
-  color: white;
 }
 
 .navbar-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -115,6 +128,10 @@ p:not(:last-child) {
 }
 
 .navbar-list li a {
+  letter-spacing: 0.2rem;
+  color: #66cc99;
+  font-weight: bold;
+  text-transform: uppercase;
   display: block;
   padding: 1rem;
   text-decoration: none;
@@ -127,10 +144,15 @@ p:not(:last-child) {
 .burger-button {
   /* using css to draw button instead of svg, icon etc. */
   position: absolute;
-  top: 10px; 
-  right: 10px; 
-  flex-direction: column;
-  justify-content: space-between;
+  top: 10px;
+  right: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 40px;
   height: 31px;
   background-color: #252323;
@@ -147,28 +169,37 @@ p:not(:last-child) {
 
 /* about section */
 .about .avatar {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
   border-radius: 50%;
 }
+
 .about .full-name {
   line-height: 40px;
   text-transform: uppercase;
   color: #66cc99;
   font-size: 2.5rem;
 }
+
 .about .first-name {
   font-weight: bold;
 }
+
 .about .last-name {
   font-weight: 300;
 }
+
 .about .contact-info {
   font-weight: 300;
 }
+
 .about .main-title {
+  color: white;
+  font-weight: bold;
   margin-top: 20px;
   margin-bottom: 5px;
   font-size: 1.3rem;
@@ -178,10 +209,12 @@ p:not(:last-child) {
 .experience-section:not(:first-of-type) {
   padding-top: 15px;
 }
+
 .experience-section:not(:last-of-type) {
   padding-bottom: 15px;
   border-bottom: 1px solid #252323;
 }
+
 .company-logotype {
   margin-top: 10px;
   margin-right: 10px;
@@ -189,36 +222,49 @@ p:not(:last-child) {
   max-width: 100%;
   height: auto;
 }
+
 .company-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.experience-company {
+
+.experience-company, .experience-role-title {
   color: white;
   font-weight: bold;
 }
+
 .experience-role-type {
   font-weight: 300;
 }
+
 .experience-role {
   margin-bottom: 10px;
 }
-.experience-role-title {
-  color: white;
-  font-weight: bold;
-}
+
 .experience-role-details {
   font-weight: normal;
 }
+
 .experience-section .header:first-of-type {
-  margin-top: 10px; 
+  margin-top: 10px;
 }
+
 .experience-section .header {
-  letter-spacing: 0.1rem;
-  font-weight: bold;
   color: white;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
-  margin-right: 6px;
+}
+
+/* technology */
+.technology-area {
+  color: white;
+  font-weight: bold;
 }
 
 @media all and (max-width: 600px) {
@@ -227,7 +273,10 @@ p:not(:last-child) {
     padding-top: 0;
   }
   .row {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .column {
     padding-right: 0px;
@@ -241,18 +290,21 @@ p:not(:last-child) {
   .company-logotype {
     margin-top: 0px;
   }
-
   .anchor {
     /* no need to offset anchors in mobile mode since no top nav menu exist here */
     top: 0rem;
   }
-
   /* navbar stuff */
   .navbar {
     right: 0;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .burger-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .navbar-list {
@@ -262,7 +314,10 @@ p:not(:last-child) {
   }
   .navbar-list ul {
     width: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .navbar-list ul li {
     text-align: center;
@@ -272,14 +327,20 @@ p:not(:last-child) {
   }
   .navbar-list.open {
     /* used by js code to show/hide burger menu */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-
   /* place company logo LEFT of company details */
   .company-details {
-    display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     flex-direction: row-reverse;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
+/*# sourceMappingURL=style.css.map */
