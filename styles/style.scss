@@ -38,11 +38,11 @@ a:hover {
   text-decoration: underline;
 }
 
-.anchor {
+.link-anchor {
   /* used to avoid internal page links to be partially hidden by top nav menu */
   display: block;
   position: relative;
-  top: -top-menu-height;
+  top: -$top-menu-height;
   visibility: hidden;
 }
 
@@ -152,7 +152,7 @@ p:not(:last-child) {
 .burger-button .burger-line {
   height: 3px;
   width: 100%;
-  background-color: $highlight-color;
+  background-color: $highlight-color; 
   border-radius: 5px;
 }
 
@@ -188,41 +188,38 @@ p:not(:last-child) {
 }
 
 /* experience */
-.experience-section:not(:first-of-type) {
+.experience:not(:first-of-type) {
   padding-top: 15px;
 }
-.experience-section:not(:last-of-type) {
+.experience:not(:last-of-type) {
   padding-bottom: 15px;
   border-bottom: 1px solid $dark-background;
 }
-.company-logotype {
+.experience .company-logo {
   margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
   max-width: 100%;
   height: auto;
 }
-.company-details {
+.experience .company-details {
   display: flex;
   flex-direction: column;
 }
-.experience-company, .experience-role-title {
+.experience .company-name, .experience .role-title {
   @include highlight-text;
 }
-.experience-role-type {
+.experience .role-type {
   font-weight: 300;
-}
-.experience-role {
   margin-bottom: 10px;
 }
-
-.experience-role-details {
+.experience .role-details {
   font-weight: normal;
 }
-.experience-section .header:first-of-type {
+.experience .header:first-of-type {
   margin-top: 10px; 
 }
-.experience-section .header {
+.experience .header {
   @include highlight-text;
 
   letter-spacing: 0.1rem;
@@ -255,7 +252,7 @@ p:not(:last-child) {
     margin-top: 0px;
   }
 
-  .anchor {
+  .link-anchor {
     /* no need to offset anchors in mobile mode since no top nav menu exist here */
     top: 0rem;
   }
