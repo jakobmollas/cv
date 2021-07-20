@@ -28,32 +28,12 @@ a {
   color: #66cc99;
 }
 
-a:hover {
+a :hover {
   text-decoration: underline;
-}
-
-.link-anchor {
-  /* used to avoid internal page links to be partially hidden by top nav menu */
-  display: block;
-  position: relative;
-  top: -3.4rem;
-  visibility: hidden;
 }
 
 p:not(:last-child) {
   margin-bottom: 10px;
-}
-
-.container {
-  max-width: 900px;
-  background: #3d3e42;
-  margin: 0px auto 0px;
-  border-radius: 6px;
-  padding: 1rem;
-}
-
-.container:not(:last-of-type) {
-  margin-bottom: 15px;
 }
 
 /* Main flexbox setup, responsive 2 column main layout */
@@ -90,6 +70,26 @@ p:not(:last-child) {
 }
 
 /* common */
+.link-anchor {
+  /* used to avoid internal page links to be partially hidden by top nav menu */
+  display: block;
+  position: relative;
+  top: -3.4rem;
+  visibility: hidden;
+}
+
+.container {
+  max-width: 900px;
+  background: #3d3e42;
+  margin: 0px auto 0px;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.container:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
 .section-header {
   letter-spacing: 0.2rem;
   color: #66cc99;
