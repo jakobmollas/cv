@@ -203,7 +203,6 @@ p:not(:last-child) {
   font-size: 1.3rem;
 }
 
-/* experience */
 .experience:not(:first-of-type) {
   padding-top: 15px;
 }
@@ -245,10 +244,6 @@ p:not(:last-child) {
   font-weight: normal;
 }
 
-.experience .header:first-of-type {
-  margin-top: 10px;
-}
-
 .experience .header {
   color: white;
   font-weight: bold;
@@ -256,7 +251,10 @@ p:not(:last-child) {
   text-transform: uppercase;
 }
 
-/* technology */
+.experience .header:first-of-type {
+  margin-top: 10px;
+}
+
 .technology-area {
   color: white;
   font-weight: bold;
@@ -297,30 +295,30 @@ p:not(:last-child) {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .burger-button {
+  .navbar .burger-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .navbar-list {
-    /* controlled via js */
-    display: none;
+  .navbar .navbar-list {
     width: 100%;
+    /* display is controlled via js, "open" class below */
+    display: none;
   }
-  .navbar-list ul {
+  .navbar .navbar-list ul {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .navbar-list ul li {
+  .navbar .navbar-list ul li {
     text-align: center;
   }
-  .navbar-list ul li a {
+  .navbar .navbar-list ul li a {
     padding: .5rem 1rem;
   }
-  .navbar-list.open {
+  .navbar .navbar-list.open {
     /* used by js code to show/hide burger menu */
     display: -webkit-box;
     display: -ms-flexbox;

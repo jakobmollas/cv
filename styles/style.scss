@@ -190,46 +190,48 @@ p:not(:last-child) {
   }
 }
 
-/* experience */
-.experience:not(:first-of-type) {
-  padding-top: 15px;
-}
-.experience:not(:last-of-type) {
-  padding-bottom: 15px;
-  border-bottom: 1px solid $dark-background;
-}
-.experience .company-logo {
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  max-width: 100%;
-  height: auto;
-}
-.experience .company-details {
-  display: flex;
-  flex-direction: column;
-}
-.experience .company-name, .experience .role-title {
-  @include highlight-text;
-}
-.experience .role-type {
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-.experience .role-details {
-  font-weight: normal;
-}
-.experience .header:first-of-type {
-  margin-top: 10px; 
-}
-.experience .header {
-  @include highlight-text;
+.experience {
+  &:not(:first-of-type) {
+    padding-top: 15px;
+  }
+  &:not(:last-of-type) {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $dark-background;
+  }
+  .company-logo {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+  .company-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .company-name, .role-title {
+    @include highlight-text;
+  }
+  .role-type {
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  .role-details {
+    font-weight: normal;
+  }
+  
+  .header {
+    @include highlight-text;
 
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+
+    &:first-of-type {
+      margin-top: 10px; 
+    }
+  }
 }
 
-/* technology */
 .technology-area {
   @include highlight-text;
 }
@@ -264,28 +266,33 @@ p:not(:last-child) {
   .navbar {
     right: 0;
     flex-direction: column;
-  }
-  .burger-button {
-    display: flex;
-  }
-  .navbar-list {
-    /* controlled via js */
-    display: none;
-    width: 100%;
-  }
-  .navbar-list ul {
-    width: 100%;
-    flex-direction: column;
-  }
-  .navbar-list ul li {
-    text-align: center;
-  }
-  .navbar-list ul li a {
-    padding: .5rem 1rem;
-  }
-  .navbar-list.open {
-    /* used by js code to show/hide burger menu */
-    display: flex;
+
+    .burger-button {
+      display: flex;
+    }
+
+    .navbar-list {
+      width: 100%;
+
+      /* display is controlled via js, "open" class below */
+      display: none;
+
+      ul {
+        width: 100%;
+        flex-direction: column;
+        li {
+          text-align: center;
+          a {
+            padding: .5rem 1rem;
+          }
+        }
+      }
+
+      &.open {
+        /* used by js code to show/hide burger menu */
+        display: flex;
+      }
+    }
   }
 
   /* place company logo LEFT of company details */
