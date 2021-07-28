@@ -1,0 +1,182 @@
+{
+  "profession:": "Software developer/architect", 
+  "summary-paragraphs": [
+    "Jakob is a curious, pragmatic and result oriented developer. He prefers to work in small, dedicated teams having a great deal of shared responsibility. He strives for solutions that are clear, simple and easy to understand and maintain. Driven by principles like Clean    Code/Architecture, DRY, KISS and No broken windows.", 
+    "Jakob is communicative and thrives both deep down in technical details and in strategic discussions with product owners and various stakeholders. Being able to look beyond the next delivery and constantly striving for stable solutions that last over time is also an important quality.", 
+    "The experience from many different industries and roles means that Jakob can take on roles and responsibilities based on the needs of the current team, organization and product."
+  ],
+
+  "contact-options": [
+    {
+      "name": "Email", 
+      "link": "mailto:jakob.mollas@gmail.com", 
+      "text": "jakob.mollas@gmail.com"
+    }, 
+    {
+      "name": "Linkedin", 
+      "link": "https://www.linkedin.com/in/jakobmollas/", 
+      "text": "linkedin.com/in/jakobmollas"
+    }
+  ],
+
+  "experience": [
+    {
+      "company": "Kapsch TrafficCom", 
+      "duration": "Dec 2017 - Apr 2021", 
+      "employment-type": "Consultant", 
+      "logo": "kapsch.png", 
+      "logo-alt-text": "Kapsch Group company logotype", 
+      "role-title": "Software developer", 
+      "role-details": "backend/frontend/integration", 
+      "mission": "To further develop the company's software for monitoring, configuration, troubleshooting, data collection and integration with third-party systems within the traffic tolling industry. The applications are business critical, and a lot of focus is placed on stability, reliability and correctness. The entire system is physically distributed and must be able to handle both online and offline scenarios.", 
+      "outcome": "Jakob contributed his knowledge and experience throughout the entire data flow. From data collection across different network protocols to refining and presenting data via different client applications and APIs. The work was carried out in a small cross-functional team as part of a larger project and included both further development of existing applications and new development. He also worked with investigations of various new technical solutions, building automation (Continuous Integration) and technical documentation of both applications and APIs.", 
+      "expertise": "The ability to understand a complex domain and quickly deliver high quality code and solutions in a variety of applications and applications.", 
+      "technology": "C#, .NET, .NET Core, WinForms, RavenDb, Adoc, PlantUml, SVN, GitLab (CI), XUnit/Moq, PowerShell, Docker, Protocol Buffers, JSON, TCP/IP, HTTP/S, JWT, JIRA, Confluence", 
+      "links": [
+        {
+          "link": "https://www.kapsch.net/en/ktc/solutions/tolling", 
+          "text": "www.kapsch.net/en/ktc/solutions/tolling"
+        }
+      ]
+    }, 
+    {
+      "company": "Saab Training Systems", 
+      "duration": "May 2016 - Aug 2017", 
+      "employment-type": "Consultant", 
+      "logo": "saab.png", 
+      "logo-alt-text": "Saab Group company logotype", 
+      "role-title": "Software developer/architect", 
+      "role-details": "backend/frontend/integration", 
+      "mission": "To further develop the company's system for military training. The system contains a variety of applications that are responsible for data collection over various radio protocols, data storage, analysis, presentation, and integration. Large parts of the system are developed based on different proprietary platforms and data formats, which sometimes means complicated integrations over both specialized data transports and message formats. The work also includes the development of prototypes for new technical platforms, the development of software for system testing and the introduction of Continuous Integration via TFS.", 
+      "outcome": "Jakob was able to quickly familiarize himself with and contribute with development in existing applications, but also contribute with knowledge about new technical solutions, implement prototypes around these and contribute with knowledge and hands-on work regarding building automation.", 
+      "expertise": "Knowledge of low-level protocols/transports, automatic code generation from documentation, modern alternatives to proprietary solutions, technical prototypes for new technology.", 
+      "technology": "C, C#, .NET, .NET Core, WinForms, WPF, automatic code generation from specifications, XUnit/Moq, Protocol Buffers, ZeroMq, NetMq, DIS/HLA, SQL Server, Bluetooth, JSON, TCP/IP, HTTP, Team Foundation Server (TFS)", 
+      "links": [
+        {
+          "link": "https://www.saab.com/products/land/training-and-simulation", 
+          "text": "www.saab.com/products/land/training-and-simulation"
+        }
+      ]
+    }, 
+    {
+      "company": "Coloreel", 
+      "duration": "Feb 2016 - May 2016", 
+      "employment-type": "Consultant", 
+      "logo": "coloreel.png", 
+      "logo-alt-text": "Coloreel company logotype", 
+      "role-title": "Software developer/architect", 
+      "role-details": "backend/integration", 
+      "mission": "Contribute with technical expertise in the development of embedded software in a hardware-based development project. The customer needs help structuring data flows between different separate subsystems within the hardware. The software is responsible for collecting sensor data, controlling various motors, handling the main io display (showing status and controlling configuration). The solution requires a high degree of stability and robustness.", 
+      "outcome": "Jakob contributed with a number of new technical solutions to coordinate data flows in an efficient and robust manner between different parts of the system. As the system is made up of several hardware platforms with different processor architecture, a lot of work was put into creating technology-agnostic solutions independent of exact development language and hardware used in each subsystem.", 
+      "expertise": "Knowledge of modern platform-agnostic solutions for low-level protocols and transports.", 
+      "technology": "C, C#, .NET, WPF, automatic code generation, Protocol Buffers, ZeroMq, UDP, TCP/IP, SVN", 
+      "links": [
+        {
+          "link": "https://www.coloreel.com/", 
+          "text": "www.coloreel.com"
+        }
+      ]
+    }, 
+    {
+      "company": "Husqvarna Group", 
+      "duration": "Oct 2014 - Feb 2016", 
+      "employment-type": "Consultant", 
+      "logo": "husqvarna.png", 
+      "logo-alt-text": "Husqvarna Group company logotype", 
+      "role-title": "Technical project manager, organizational advisor, software developer", 
+      "role-details": "", 
+      "mission": "To establish and start up the company's new department for customer-focused software (now called Husqvarna Digital Solutions). Currently, there are only departments working with embedded software and e-commerce and the client has decided to start connecting their various products e.g., their Automower but there is no knowledge or department working with this type of development. The assignment also includes to specifically develop a backend/frontend (mobile applications) solution for the company's subdivision Gardena and their “Smart Garden” (now Gardena Smart). The assignment is complex in nature and includes a lot of discussions with product management, IT management and a variety of product specialists. At the start of the assignment there is no department, developer, premises or hardware available.", 
+      "outcome": "Jakob helped establish a team responsible for developing a cloud-based backend and mobile-based frontend for the company's Smart Garden solution. In addition, he helped establish the new department with responsibility for handling similar development projects. This included a lot of work with processes and principles related to agile software development. He worked a lot with the coordination of different international teams responsible for different parts of the solution.", 
+      "expertise": "Knowledge of modern development methodology and the ability to communicate with various stakeholders in a pedagogical way in a pressured project - everything from low-level embedded developers to management staff.", 
+      "technology": "Agile development processes/principles like Scrum, Continuous integration/Deployment, AWS (Amazon Web Services), JIRA, Confluence, Bitbucket, Bamboo", 
+      "links": [
+        {
+          "link": "https://www.gardena.com/int/products/smart/", 
+          "text": "www.gardena.com/int/products/smart"
+        }, 
+        {
+          "link": "https://www.linkedin.com/in/digital-solutions-husqvarna-0005291b1/", 
+          "text": "www.linkedin.com/in/digital-solutions-husqvarna"
+        }
+      ]
+    }, 
+    {
+      "company": "Kapsch TrafficCom", 
+      "duration": "Jun 2011 - Oct 2014", 
+      "employment-type": "Employee", 
+      "logo": "kapsch.png", 
+      "logo-alt-text": "Kapsch Group company logotype", 
+      "role-title": "Technical project manager, system developer/architect", 
+      "role-details": "backend/frontend", 
+      "mission": "Work with greenfield development of software for monitoring, configuration, troubleshooting, data collection and integration with third-party systems within the traffic tolling industry. The applications are complex, business critical and a lot of focus is placed on stability, reliability, security and accuracy.", 
+      "outcome": "Jakob worked as a technical project manager for a subsystem in a multinational development project with the aim of developing a completely new electronic traffic tolling system. The subsystem is responsible for monitoring, configuring, and debugging the physically distributed tolling system. In addition, he worked hands-on with the development of these applications, primarily with various security-related systems. These systems use customer-specific proprietary hardware to encrypt, decrypt and sign data (both symmetrically and asymmetrically). The development of the software for handling this hardware was relatively complex as much of the work had to be done from scratch. The work also included a lot of review of specifications and documentation related to this hardware.", 
+      "expertise": "Accuracy, performance-related optimizations, focus on details and the ability to pedagogically communicate with many different stakeholders in a pressured project.", 
+      "technology": "C#, .NET, WinForms, WPF, Sql Server, SVN, Jenkins, XUnit/Moq, Iron Python, Protocol Buffers, TCP/IP, HTTP/S, proprietary security platforms", 
+      "links": [
+        {
+          "link": "https://www.kapsch.net/en/ktc/solutions/tolling", 
+          "text": "www.kapsch.net/en/ktc/solutions/tolling"
+        }
+      ]
+    }, 
+    {
+      "company": "Saab Training Systems", 
+      "duration": "Jun 2004 - Jun 2011", 
+      "employment-type": "Employee", 
+      "logo": "saab.png", 
+      "logo-alt-text": "Saab Group company logotype", 
+      "role-title": "Software developer/architect", 
+      "role-details": "backend/frontend/integration", 
+      "mission": "To further develop the company's 3D-based system for military infantry training. The system contains a variety of applications that are responsible for data collection, storage, analysis, presentation, integration with third-party systems, etc. Large parts of the system are built using proprietary hardware platforms and custom data formats, which sometimes means complicated integrations over both specialized data transports and message formats. The entire system is physically distributed and must be able to handle both online and offline scenarios.", 
+      "outcome": "Jakob worked with a wide range of applications and was able to quickly become acquainted with new technology, contribute with new technical solutions and find new solutions to problems. Among other things, he helped introduce C#/.Net, develop a new database solution and develop a new system for virtual anti-tank training.", 
+      "expertise": "", 
+      "technology": "C, C++, C#, .NET, WinForms, MFC/ATL/QT, DOORS, SQL Server, Crystal Reports, ARC GIS, DIS/HLA, SQL Server, TCP/IP, IBM ClearCase", 
+      "links": [
+        {
+          "link": "https://www.saab.com/products/land/training-and-simulation", 
+          "text": "www.saab.com/products/land/training-and-simulation"
+        }
+      ]
+    }, 
+    {
+      "company": "Lawson / Intentia / Logicent", 
+      "duration": "Jun 1999 - Jun 2004", 
+      "employment-type": "Employee", 
+      "logo": "intentia.png", 
+      "logo-alt-text": "Intentia company logotype", 
+      "role-title": "Software developer", 
+      "role-details": "backend/frontend/integration", 
+      "mission": "Develop the company's CRM system and specifically their quotation/ordering module. The work includes everything from database development, business logic and client applications to integration with the companies' ERP systems Movex (now Infor M3).", 
+      "outcome": "Jakob worked in a small team with development throughout the entire product and was able to quickly contribute with new solutions.", 
+      "expertise": "", 
+      "technology": "C++, MFC/ATL, COM, SourceSafe, SQL Server, C#/.NET", 
+      "links": [ ]
+    }
+  ],
+  "technology": [
+    {
+      "name": "Frameworks", 
+      "details": ".NET, .NET Core, ASP .NET Core, ZeroMq, NetMq, DevExpress, Polly, XUnit, Moq"
+    },
+    {
+      "name": "Databases", 
+      "details": "SQL Server, RavenDb, SQL Lite"
+    }, 
+    {
+      "name": "IDEs/Development tools", 
+      "details": "Visual Studio, Visual Studio Code, LinqPad, PostMan, WireShark, Fiddler, ReSharper"
+    }, 
+    {
+      "name": "Programming languages", 
+      "details": "C#, PowerShell, XML, JSON, Protocol Buffers, CAKE, T4, CSS, HTML"
+    }, 
+    {
+      "name": "Cloud", 
+      "details": "Basic Amazon Web Services (AWS) and Azure"
+    }, 
+    {
+      "name": "DevOps/CI/Other Tools", 
+      "details": "GitLab, Azure DevOps/TFS, Bamboo, Jenkins, JIRA, Confluence, ADoc, MarkDown, PlantUml, diagrams.net"
+    }
+  ]
+}

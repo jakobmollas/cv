@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Jakob Möllås</title>
+    <meta name="description" content="Custom made Curriculum Vitae (CV) for and by Jakob Möllås">
+    <meta property="og:title" content="CV for Jakob Möllås">
+    <meta property="og:description" content="Custom online CV for Jakob Möllås">
+    <meta property="og:image" content="https://jakobmollas.github.io/cv/docs/avatar.jpg">
+    <meta property="og:url" content="https://jakobmollas.github.io/cv/docs/index.html">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:site_name" content="CV for Jakob Möllås">
+    <meta name="twitter:image:alt" content="CV Image for Jakob Möllås">
+
+    <!-- Defer font loading until page is fully loaded -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" media="print"
+        onload="this.media='all'" />
+    <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet"
+            type="text/css" />
+    </noscript>
+
+    <link rel="stylesheet" media="all" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="burger-button">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="navbar-list">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="row about">
+                <div class="column left">
+                    <img src="images/avatar.jpg" alt="Photo of Jakob Möllås" class="avatar" width="200" height="200" />
+                </div>
+
+                <div class="column right">
+                    <div class="name-and-links">
+                        <div class="full-name">
+                            <span class="first-name">Jakob</span>
+                            <span class="last-name">Möllås</span>
+                        </div>
+
+                        {{#each this.contact-options}}
+                        <address class="contact-info">
+                            {{this.name}}: <a href="{{this.link}}">{{this.text}}</a>
+                        </address>
+                        {{/each}}
+                    </div>
+
+                    <article>
+                        <h1 class="highlight main-title">{{this.Profession}}</h1>
+                        {{#each this.summary-paragraphs}}
+                        <p>{{this}}</p>
+                        {{/each}}
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="link-anchor" id="experience"></div>
+        <section class="container">
+            <h2 class="row section-header">Experience</h2>
+            {{#each experience}}
+            <article class="row experience">
+                <div class="column left company-details">
+                    <div>
+                        <h3 class="company-name">{{this.company}}</h3>
+                        <div class="duration">{{this.duration}}</div>
+                        <div class="role-type">({{this.employment-type}})</div>
+                    </div>
+                    <img src="images/{{this.logo}}" alt="{{this.logo-alt-text}}" class="company-logo" height="75" width="75" />
+                </div>
+                <div class="column right">
+                    <h3>
+                        <span class="role-title">{{this.role-title}}</span>
+                        {{#if this.role-details}}
+                        <span class="role-details">({{this.role-details}})</span>
+                        {{/if}}
+                    </h3>
+
+                    <h4 class="header">Mission</h4>
+                    <p>{{this.mission}}</p>
+                    <h4 class="header">Outcome</h4>
+                    <p>{{this.outcome}}</p>
+                    {{#if this.expertise}}
+                    <h4 class="header">Specific expertise</h4>
+                    <p>{{this.expertise}}</p>
+                    {{/if}}
+                    <h4 class="header">Technology</h4>
+                    <p>{{this.technology}}</p>
+                    {{#each this.links}}
+                    <a href="{{this.link}}">{{this.text}}</a>
+                    {{/each}}
+                </div>
+            </article>
+            {{/each}}
+        </section>
+
+        <div class="link-anchor" id="education"></div>
+        <section class="container">
+            <h2 class="row column section-header">Education</h2>
+            <p>Information Technology<br>
+                Jönköping University, Sweden<br>
+                1996-1999</p>
+        </section>
+
+        <div class="link-anchor" id="technology"></div>
+        <section class="container">
+            <h2 class="section-header">Technology (mostly used)</h2>
+
+            {{#each technology}}
+            <h3 class="technology-area">{{this.name}}</h3>
+            <p>{{this.details}}</p>
+            {{/each}}
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
