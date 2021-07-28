@@ -13,7 +13,7 @@
             ],
             "cwd": "${workspaceFolder}",
             "runtimeExecutable": "npm",
-            "runtimeArgs": ["run", "build", "./src/index.hbs", "./src/content.json", "./docs/index.html"]
+            "runtimeArgs": ["run", "build"]
         }
     ]
 }

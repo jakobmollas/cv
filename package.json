@@ -1,26 +1,16 @@
 {
   "name": "cv",
   "version": "1.0.0",
-  "description": "Custom-made CV for Jakob Möllås: https://jakobmollas.github.io/cv/",
-  "main": "src/index.js",
-  "directories": {
-    "doc": "docs"
+  "watch": {
+    "build": {
+      "patterns": ["src"],
+      "extensions": "js, json, hbs"
+    }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
-    "build": "node src/compile-template.js"
+    "watch": "npm-watch",
+    "build": "node src/compile-template.js src/index.hbs src/content.json docs/index.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jakobmollas/cv.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jakobmollas/cv/issues"
-  },
-  "homepage": "https://github.com/jakobmollas/cv#readme",
   "dependencies": {
     "handlebars": "^4.7.7"
   }
