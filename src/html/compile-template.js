@@ -7,8 +7,8 @@ var contentPath = process.argv[3];
 var outputPath = process.argv[4];
 
 console.log("Template:", templatePath);
-console.log("Content data:", contentPath);
-console.log("Output file:", outputPath);
+console.log("Content:", contentPath);
+console.log("Output:", outputPath);
 
 var content = JSON.parse(fs.readFileSync(contentPath, "utf-8"));
 compileTemplate(content);

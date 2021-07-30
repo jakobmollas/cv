@@ -2,16 +2,29 @@
   "name": "cv",
   "version": "1.0.0",
   "watch": {
-    "build": {
-      "patterns": ["src"],
+    "build-html": {
+      "patterns": [
+        "src"
+      ],
       "extensions": "js, json, hbs"
+    }, 
+    "build-css": {
+      "patterns": [
+        "docs/styles"
+      ],
+      "extensions": "scss"
     }
   },
   "scripts": {
     "watch": "npm-watch",
-    "build": "node src/compile-template.js src/index.hbs src/content.json docs/index.html"
+    "build-html": "node src/html/compile-template.js src/html/index.hbs src/html/content.json docs/index.html",
+    "build-css": "sass src/scss/styles.scss docs/css/styles.css", 
+    "build": "npm rum build-html && npm run build-css"
   },
-  "dependencies": {
-    "handlebars": "^4.7.7"
+  "dependencies": {},
+  "devDependencies": {
+    "handlebars": "^4.7.7",
+    "npm-watch": "^0.10.0",
+    "sass": "^1.36.0"
   }
 }

@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-size: 100%;
@@ -27,7 +26,6 @@ a {
   text-decoration: none;
   color: #66cc99;
 }
-
 a :hover {
   text-decoration: underline;
 }
@@ -38,26 +36,15 @@ p:not(:last-child) {
 
 /* Main flexbox setup, responsive 2 column main layout */
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .left {
@@ -85,7 +72,6 @@ p:not(:last-child) {
   border-radius: 6px;
   padding: 1rem;
 }
-
 .container:not(:last-of-type) {
   margin-bottom: 15px;
 }
@@ -105,27 +91,17 @@ p:not(:last-child) {
   top: 0;
   /* this will center the navbar horizontally */
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translateX(-50%);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #252323;
 }
-
 .navbar .navbar-list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .navbar .navbar-list ul li {
   list-style: none;
 }
-
 .navbar .navbar-list ul li a {
   letter-spacing: 0.2rem;
   color: #66cc99;
@@ -135,30 +111,22 @@ p:not(:last-child) {
   padding: 1rem;
   text-decoration: none;
 }
-
 .navbar .navbar-list ul li:hover {
   background-color: #3d3e42;
 }
-
 .navbar .burger-button {
   /* using css to draw button instead of svg, icon etc. */
   position: absolute;
   top: 10px;
   right: 10px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   width: 40px;
   height: 31px;
   background-color: #252323;
   padding: 5px;
   display: none;
 }
-
 .navbar .burger-button .burger-line {
   height: 3px;
   width: 100%;
@@ -167,34 +135,27 @@ p:not(:last-child) {
 }
 
 .about .avatar {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
   border-radius: 50%;
 }
-
 .about .full-name {
   line-height: 40px;
   text-transform: uppercase;
   color: #66cc99;
   font-size: 2.5rem;
 }
-
 .about .first-name {
   font-weight: bold;
 }
-
 .about .last-name {
   font-weight: 300;
 }
-
 .about .contact-info {
   font-weight: 300;
 }
-
 .about .main-title {
   color: white;
   font-weight: bold;
@@ -206,12 +167,10 @@ p:not(:last-child) {
 .experience:not(:first-of-type) {
   padding-top: 15px;
 }
-
 .experience:not(:last-of-type) {
   padding-bottom: 15px;
   border-bottom: 1px solid #252323;
 }
-
 .experience .company-logo {
   margin-top: 10px;
   margin-right: 10px;
@@ -219,38 +178,27 @@ p:not(:last-child) {
   max-width: 100%;
   height: auto;
 }
-
 .experience .company-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .experience .company-name, .experience .role-title {
   color: white;
   font-weight: bold;
 }
-
 .experience .role-type {
   font-weight: 300;
   margin-bottom: 10px;
 }
-
 .experience .role-details {
   font-weight: normal;
 }
-
 .experience .header {
   color: white;
   font-weight: bold;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
-
 .experience .header:first-of-type {
   margin-top: 10px;
 }
@@ -265,39 +213,38 @@ p:not(:last-child) {
   body {
     padding-top: 0;
   }
+
   .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .column {
     padding-right: 0px;
   }
+
   .left, .right {
     width: 100%;
   }
+
   .name-and-links {
     text-align: center;
   }
+
   .company-logotype {
     margin-top: 0px;
   }
+
   .link-anchor {
     /* no need to offset anchors in mobile mode since no top nav menu exist here */
     top: 0rem;
   }
+
   /* navbar stuff */
   .navbar {
     right: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .navbar .burger-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .navbar .navbar-list {
@@ -307,33 +254,25 @@ p:not(:last-child) {
   }
   .navbar .navbar-list ul {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .navbar .navbar-list ul li {
     text-align: center;
   }
   .navbar .navbar-list ul li a {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
   .navbar .navbar-list.open {
     /* used by js code to show/hide burger menu */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
+
   /* place company logo LEFT of company details */
   .company-details {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     flex-direction: row-reverse;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=styles.css.map */
