@@ -4,13 +4,13 @@
   "watch": {
     "build-html": {
       "patterns": [
-        "src"
+        "src/html"
       ],
       "extensions": "js, json, hbs"
     }, 
     "build-css": {
       "patterns": [
-        "docs/styles"
+        "src/scss"
       ],
       "extensions": "scss"
     }
