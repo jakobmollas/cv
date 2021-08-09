@@ -16,6 +16,11 @@
       "name": "Linkedin", 
       "link": "https://www.linkedin.com/in/jakobmollas/", 
       "text": "linkedin.com/in/jakobmollas"
+    }, 
+    {
+      "name": "GitHub", 
+      "link": "https://github.com/jakobmollas",
+      "text": "github.com/jakobmollas"
     }
   ],
 

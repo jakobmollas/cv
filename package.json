@@ -7,7 +7,7 @@
         "src/html"
       ],
       "extensions": "js, json, hbs"
-    }, 
+    },
     "build-css": {
       "patterns": [
         "src/scss"
@@ -18,7 +18,7 @@
   "scripts": {
     "watch": "npm-watch",
     "build-html": "node src/html/compile-template.js src/html/index.hbs src/html/content.json docs/index.html",
-    "build-css": "sass src/scss/styles.scss docs/css/styles.css", 
+    "build-css": "sass src/scss/styles.scss docs/css/styles.css",
     "build": "npm rum build-html && npm run build-css"
   },
   "dependencies": {},
