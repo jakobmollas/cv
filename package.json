@@ -19,7 +19,7 @@
     "watch": "npm-watch",
     "build-html": "node src/html/compile-template.js src/html/index.hbs src/html/content.json docs/index.html",
     "build-css": "sass src/scss/styles.scss docs/css/styles.css",
-    "build": "npm rum build-html && npm run build-css"
+    "build": "npm run build-html && npm run build-css"
   },
   "dependencies": {},
   "devDependencies": {

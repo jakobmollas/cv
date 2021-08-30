@@ -173,7 +173,7 @@
     }, 
     {
       "name": "Programming languages", 
-      "details": "C#, JavaScript, PowerShell, XML, JSON, Protocol Buffers, CAKE, T4, CSS, HTML"
+      "details": "C#, JavaScript, TypeScript, PowerShell, XML, JSON, Protocol Buffers, CAKE, T4, CSS, HTML"
     }, 
     {
       "name": "Cloud", 

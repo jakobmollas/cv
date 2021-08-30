@@ -17,11 +17,11 @@ function compileTemplate(content) {
   var template = fs.readFileSync(templatePath, "utf-8");
   var renderTemplate = Handlebars.compile(template);
   var generatedText = renderTemplate(content);
-  
+
   fs.writeFile(outputPath, generatedText, err => {
     if (err) console.log(err);
-    
+
     console.log("");
-    console.log("Succesfully generated", outputPath);
+    console.log("Successfully generated", outputPath);
   });
 }
