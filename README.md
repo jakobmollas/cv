@@ -7,5 +7,5 @@ LinkedIn: https://www.linkedin.com/in/jakobmollas/
 * Sass/scss used to simplify css handling
 * NPM Watch used to automatically build html on file updates
 
-- `npm run watch`- watch and build on the fly
-- `npm run build` - compile into /docs
+`npm run watch`- watch and build on the fly + 
+`npm run build` - compile into /docs
